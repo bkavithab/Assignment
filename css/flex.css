@@ -1,0 +1,53 @@
+.flexContainer {
+    display: flex;
+}
+.flexItem {
+    flex: 1;
+}
+.flexStart {
+    justify-content: flex-start;
+}
+.flexEnd {
+    justify-content: flex-end;
+}
+.blueBackground {
+    background: grey;
+}
+.nav {
+    list-style: none;
+}
+.nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0 1em;
+    color: white;
+}
+.blueBackground {
+    background: lightskyblue;
+}
+
+.flexCenter {
+    justify-content: center;
+}
+.fullHeight {
+    height: 100vh;
+}
+.itemCenter {
+    align-items: center;
+}
+.fullHeight {
+    height: 100vh;
+}
+.centerImage {
+    background: url('./img/ocean.png') center;
+    background-size: cover;
+}
+
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.whiteBackground {
+    background: white;
+}

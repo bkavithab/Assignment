@@ -1,0 +1,91 @@
+.flexContainer {
+    display: flex;
+}
+.flexItem {
+    flex: 1;
+}
+.flexStart {
+    justify-content: flex-start;
+}
+.flexEnd {
+    justify-content: flex-end;
+}
+.blueBackground {
+    background: grey;
+}
+.nav {
+    list-style: none;
+}
+.nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0 1em;
+    color: white;
+}
+.blueBackground {
+    background: lightskyblue;
+}
+
+.flexCenter {
+    justify-content: center;
+}
+.fullHeight {
+    height: 100vh;
+}
+.itemCenter {
+    align-items: center;
+}
+.fullHeight {
+    height: 100vh;
+}
+.centerImage {
+    background: url('./img/ocean.png') center;
+    background-size: cover;
+}
+
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.whiteBackground {
+    background: white;
+}
+
+.main{
+    order: 2;
+    padding: 20px;
+    border-left: 1px solid #777777;
+    border-right: 1px solid #777777;
+}
+.sidebar {
+    width: 20%;
+    background: white;
+    padding: 20px;
+}
+.sidebarLeft{
+    order: 1;
+}
+.sidebarRight{
+    order: 3;
+}
+
+.flexSpaceAround {
+    justify-content: space-around;
+}
+.subContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+.col {
+    width: 32%;
+    border: 1px solid #777777;
+    border-radius: 8px;
+    background: white;
+    padding: 20px;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
