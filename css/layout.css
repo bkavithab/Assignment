@@ -6,6 +6,7 @@
   display: flex;
   background-color: DodgerBlue;
   flex-direction: row;
+     padding-top: 20px;
 }
 
 .flex-container > div {
@@ -22,10 +23,25 @@
 }
 [class*="col-"] {
     /*float: left;*/
-
-    padding: 15px;
+    padding-top: 100px;
+        padding: 15px;
 }
 
+.heroImage1 {
+    border: 2px solid blue;
+    padding: 500px;
+    background: url(../img/bangalore1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.heroImage {
+ background: url(../img/bangalore1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 html {
     font-family: "Lucida Sans", sans-serif;
@@ -35,6 +51,7 @@ html {
     flex-direction: row;
 }
 .header {
+
     background-color: #9933cc;
     color: #ffffff;
     padding: 15px;
@@ -45,7 +62,8 @@ html {
     margin: 0;
     padding: 0;
 }
-.menu li {
+.menu  ul li {
+     list-style-type: none;
     padding: 8px;
     margin-bottom: 7px;
     background-color: #33b5e5;
@@ -66,7 +84,7 @@ html {
 }
 
 .section2 {
-    background-color: green;
+    background-color: #33b5e5;
     padding: 15px;
     color: #ffffff;
     text-align: center;
@@ -77,16 +95,15 @@ html {
     background-color: #0099cc;
     color: #ffffff;
     text-align: center;
-    font-size: 12px;
-    padding: 15px;
+    font-size: 4rm;
+    padding: 10px;
 }
-
-
 
 /* For desktop: */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
+.col-3 {
+    width: 25%;}
 .col-4 {width: 33.33%;}
 .col-5 {width: 41.66%;}
 .col-6 {width: 50%;}
@@ -100,6 +117,7 @@ html {
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="col-"] {
+         flex-direction: column;
         width: 100%;
     }
     .flex-container {
@@ -107,9 +125,84 @@ html {
         width: 100%;
     }
    .header {
+    flex-direction: column;
       width: 100%;
    }
+   .col-3 menu {
+      flex-direction: column;
+      width: 100%;
+   }
+
+.flex-container {
+flex-direction: column;
+      width: 100%;
+}
+
+.flex-container > div {
+ flex-direction: column;
+      width: 100%;
+}
+.row::after {
+  flex-direction: column;
+      width: 100%;
+}
+[class*="col-"] {
+   flex-direction: column;
+      width: 100%;
    
+}
+
+.heroImage {
+    flex-direction: column;
+      width: 100%;
    
+}
+.heroImage1 {
+ flex-direction: column;
+      width: 100%;
+}
+
+
+.section{
+   flex-direction: column;
+      width: 100%;
+}
+.header {
+flex-direction: column;
+      width: 100%;
+   
+
+}
+.menu ul {
+  flex-direction: column;
+      width: 100%;
+}
+.menu  ul li {
+    flex-direction: column;
+      width: 100%;
+
+}
+.menu li:hover {
+   flex-direction: column;
+      width: 100%;
+}
+.aside {
+    flex-direction: column;
+      width: 100%;
+  
+}
+
+.section2 {
+    flex-direction: column;
+      width: 100%;
+   
+}
+.footer {
+    flex-direction: column;
+      width: 100%;
+   
+}
+
+  
    
 }

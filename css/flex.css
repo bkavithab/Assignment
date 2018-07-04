@@ -51,3 +51,7 @@
 .whiteBackground {
     background: white;
 }
+.ul{
+ list-style: none;
+}
+}
